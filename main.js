@@ -40,7 +40,8 @@ window.addEventListener('DOMContentLoaded',()=>{
         let check= false;
         let who = ''
         for(let i of winningConditions) {
-            if(table[i[0]] === table[i[1]] && table[i[1]]=== table[i[2]]) {
+            console.log(i, table,table[i[0]] === table[i[1]] && table[i[1]]=== table[i[2]])
+            if(table[i[0]] && (table[i[0]] === table[i[1]] && table[i[1]]=== table[i[2]])) {
                 for(let j of tiles) {
                     if(i.includes(Number(j.id))) {
                         j.style.border = "3px solid green";
