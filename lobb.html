@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <script src="/main.js"></script>
+    <script src="/lobby.js"></script>
     <title>Tic-Tac-Toe</title>
 </head>
+
 <body>
     <main class="background">
         <div class="title">
-            <h3>CHOOSE MULTIPLAYER MODE</h3>
+            <h3>Create Game</h3>
 
+            <h5>Create game and share the link with your friend</h5>
+
+            <button class="select-but" id="create-game">Create Game</button>
         </div>
-        <div class="select-container">
-            <a href="/home.html"> <button class="select-but"> Offline Mode </button></a>
-            <a href="/lobb.html"> <button class="select-but"> Online  Mode </button></a>
-            
-        </div>
+
 
     </main>
+    <div class="modal">
+
+            <input type="text" placeholder="Name of the game"/>
     
+            <button class="select-but" id="final-create">Create</button>
+
+
+    </div>
+
 </body>
+
 </html>
